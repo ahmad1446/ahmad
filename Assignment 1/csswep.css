@@ -1,0 +1,196 @@
+body {
+    font-family : Arial, sans-serif;
+    line-height : 1.6;
+    background-color : rgba(162, 162, 162, 0.781);
+    color : #333;
+    margin : 0;
+    padding : 0;
+    z-index : 2;
+    }
+   
+    nav {
+    background-color : black;
+    padding : 15px;
+    height : 5%;
+    position : fixed;
+    width : 100%;
+    top : 0;
+    left : 0;
+    z-index : 1000;
+    border-bottom : 1px darkgray;
+    }
+    nav ul {
+    list-style : none;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    flex-direction : row;
+    }
+    nav li {
+    margin-top : 1%;
+    font-family : fantasy;
+    text-decoration : underline;
+    font-style : italic;
+    }
+    nav a {
+    color : white;
+    text-decoration : none;
+    font-size : 1.1em;
+    padding : 10px 20px;
+    }
+    nav a:hover {
+    color : blue;
+    }
+    header {
+    margin-top : 50px;
+    background-color : #007BFF;
+    color : white;
+    padding : 20px 0;
+    text-align : center;
+    }
+    header h1 {
+    margin : 0;
+    font-size : 2.5em;
+    }
+    header p {
+    font-size : 1.3em;
+    margin-top : 10px;
+    }
+    .container {
+    display : flex;
+    justify-content : left;
+    flex : 1 1 600px;
+    max-width : 100%;
+    background-color : rgb(255, 255, 255, 0.781);
+    }
+    .container ul {
+      list-style:upper-roman;
+    
+    }
+    section {
+    padding : 20px;
+    margin : 20px auto;
+    max-width : 100%;
+    background-color : rgb(222, 246, 254);
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size : larger;
+    }
+    section h2 {
+    border-bottom : 2px solid #007BFF;
+    padding-bottom : 10px;
+    margin-bottom : 20px;
+    }
+    .project {
+    margin-bottom : 20px;
+    }
+    .project h3 {
+    color : #007BFF;
+    }
+    .pagelink {
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration : underline;
+    color : rgb(0, 0, 0);
+    }
+    .contact ul {
+    list-style : upper-roman;
+    padding : 0;
+    }
+    .contact li {
+    margin-bottom : 10px;
+    }
+    .contact a {
+    color : rgb(124, 124, 214);
+    text-decoration : none;
+    }
+    .contact a:hover {
+    color: black;
+    }
+    footer {
+    background-color : rgb(24, 23, 23);
+    color : white;
+    text-align : center;
+    padding : 10px 0;
+    }
+    #Face {
+    color : rgb(71, 106, 244, 0.53);
+    font-weight : 800;
+    font-style : oblique;
+    }
+    #Snap {
+    color : rgb(211, 211, 0);
+    font-weight : 800;
+    font-style : oblique;
+    }
+    
+    @media (max-width: 992px) {
+    .container {
+    flex-direction : column;
+    align-items : center;
+    }
+    nav ul {
+    flex-direction : row;
+    }
+    nav a {
+    font-size : 1em;
+    padding : 8px 15px;
+    }
+    header h1 {
+    font-size : 2.2em;
+    }
+    section {
+    padding : 15px;
+    max-width : 90%;
+    }
+    }
+    @media (max-width: 768px) {
+    header h1 {
+    font-size : 2em;
+    }
+    section {
+    padding : 15px;
+    }
+    nav ul {
+    flex-direction : row;
+    align-items : flex-start;
+    }
+    }
+    @media (max-width: 576px) {
+    body {
+    margin-left : 0;
+    }
+    nav {
+    display : none;
+    width : 100%;
+    height : auto;
+    position : fixed;
+    top : 0;
+    }
+    nav ul {
+    display : none;
+    flex-direction : column;
+    align-items : flex-start;
+    }
+    nav ul li {
+    margin-top : 10px;
+    }
+    nav a {
+    width : 100%;
+    padding : 10px;
+    text-align : left;
+    }
+    header h1 {
+    font-size : 1.8em;
+    }
+    header p {
+    font-size : 1em;
+    }
+    section {
+    padding : 10px;
+    }
+    footer {
+    font-size : 0.8em;
+    }
+    }
